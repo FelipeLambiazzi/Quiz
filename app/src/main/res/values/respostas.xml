@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pergunta1">
+        <item>SOROCABA</item>
+        <item>SÃO ROQUE</item>
+        <item>PIRAJU</item>
+        <item>SAO PAULO</item>
+        <item>MAIRINQUE</item>
+    </string-array>
+
+    <string-array name="pergunta2">
+        <item>FACULDADE DE ENGENHARIA DE SOROCABA</item>
+        <item>FAÇA MESMO NEM SABENDO</item>
+        <item>FACULDADE ENGENHEIRO</item>
+        <item>FAZENS TILTE</item>
+        <item>FAÇA VOCE MESMO</item>
+    </string-array>
+
+    <string-array name="pergunta3">
+        <item>VESTIBULAR</item>
+        <item>SÓ PAGAR E BOA</item>
+        <item>ENTRANDO PELA PORTARIA</item>
+        <item>COMPRAR VAGA</item>
+        <item>SOU AMIGO DO DONO</item>
+    </string-array>
+</resources>
