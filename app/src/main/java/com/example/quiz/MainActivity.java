@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner spinnerPergunta2;
     Spinner spinnerPergunta3;
     private TextView viewPontos;
-    private int pontos = 3;
+    private int pontos = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
