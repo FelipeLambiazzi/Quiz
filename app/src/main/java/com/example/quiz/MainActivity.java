@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner spinnerPergunta2;
     Spinner spinnerPergunta3;
     private TextView viewPontos;
-    private int pontos = 0;
+    private int pontos = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,14 +35,14 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, respostas);
         spinnerPergunta1.setAdapter(adapter);
 
-        setContentView(R.layout.activity_main);
-        respostas = getResources().getStringArray(R.array.pergunta2);
+
+        getResources().getStringArray(R.array.pergunta2);
         ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, respostas);
         spinnerPergunta2.setAdapter(adapter1);
 
-        setContentView(R.layout.activity_main);
-        respostas = getResources().getStringArray(R.array.pergunta3);
+
+        getResources().getStringArray(R.array.pergunta3);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, respostas);
         spinnerPergunta3.setAdapter(adapter2);
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     viewPontos = findViewById(R.id.viewPontos);
-                     return = viewPontos.setText("" + pontos);
+                    viewPontos.setText("" + pontos);
 
                 }
             });
