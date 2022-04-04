@@ -1,0 +1,39 @@
+     String[] respostas = getResources().getStringArray(R.array.pergunta1);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_1, respostas);
+        spinnerPergunta1.setAdapter(adapter);
+
+
+        String[] respostas1 =getResources().getStringArray(R.array.pergunta2);
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_1, respostas1);
+        spinnerPergunta2.setAdapter(adapter1);
+
+
+        String[] respostas2 =getResources().getStringArray(R.array.pergunta3);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_1, respostas2);
+        spinnerPergunta3.setAdapter(adapter2);
+
+        //chama o metodo
+        verificaResposta();
+    }
+        public void verificaResposta () {
+            buttonCalcular.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+pontos=0;
+                    String certo1, certo2, certo3;
+                    certo1 = spinnerPergunta1.getSelectedItem().toString();
+                    certo2 = spinnerPergunta2.getSelectedItem().toString();
+                    certo3 = spinnerPergunta3.getSelectedItem().toString();
+
+                    if (certo1.equals( "SOROCABA")) {
+                        pontos++;
+                    }
+                    if (certo2.equals("FACULDADE DE ENGENHARIA DE SOROCABA")) {
+                        pontos++;
+                    }
+                    if (certo3.equals( "VESTIBULAR")) {
+                        pontos++;
+                    }
